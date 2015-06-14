@@ -1,0 +1,103 @@
+{% extends "base_contact.html" %} {% block main_content %}
+<ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="/contacts">Contact Info</a>
+
+                 <!-- Codes by HTML.am -->
+
+<!-- CSS Code -->
+<style type="text/css" scoped>
+table.GeneratedTable {
+width:100%;
+background-color:#FFFFFF;
+border-collapse:collapse;border-width:1px;
+border-color:#336600;
+border-style:solid;
+color:#000000;
+}
+
+table.GeneratedTable td, table.GeneratedTable th {
+border-width:1px;
+border-color:#336600;
+border-style:solid;
+padding:3px;
+}
+
+table.GeneratedTable thead {
+background-color:#B0B0B0 ;
+}
+</style>
+
+<!-- HTML Code -->
+<table class="GeneratedTable">
+<thead>
+<tr>
+<th>Name</th>
+<th>Post</th>
+<th>Email Id</th>
+<th>Contact No.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vivek Sharma</td>
+<td>General Secretary</td>
+<td>general_secretary@students.iitmandi.ac.in</td>
+<td>+919816923625, +919911151134</td>
+</tr>
+<tr>
+<td>Abhishek Pandey</td>
+<td>Technical Secretary</td>
+<td>technical_secretary@students.iitmandi.ac.in</td>
+<td>+919816924012</td>
+</tr>
+<tr>
+<td>Kisna Mahajan</td>
+<td>Cultural Secretary</td>
+<td>cultural_secretary@students.iitmandi.ac.in</td>
+<td>+919805925895</td>
+</tr>
+<tr>
+<td>Karan Mahajan</td>
+<td>Sports Secretary</td>
+<td>sports_secretary@students.iitmandi.ac.in</td>
+<td>+919816923836</td>
+</tr>
+<tr>
+<td>Tushar Gupta</td>
+<td>Academic Secretary</td>
+<td>academic_secretary@students.iitmandi.ac.in</td>
+<td>+919816936040</td>
+</tr>
+<tr>
+<td>Farah Anjum</td>
+<td>Literary Secretary</td>
+<td>literary_secretary@students.iitmandi.ac.in</td>
+<td>+919816926884</td>
+</tr>
+<tr>
+<td>Anuraj G.P</td>
+<td>Hostel Affairs Secretary</td>
+<td>hostelaffairs_secretary@students.iitmandi.ac.in</td>
+<td>+919459075268</td>
+</tr>
+<tr>
+<td>C.Thirumurgan</td>
+<td>Research Secretary</td>
+<td>research_secretary@students.iitmandi.ac.in</td>
+<td>+919736759139</td>
+</tr>
+</tbody>
+</table>
+
+        
+<br> {% if entries %} {% autoescape false %} {% for entry in entries %}
+<div>
+    <a href="/entry?id={{ entry[0] }}">
+        <h2>{{ entry[1] }}</h2>
+    </a>
+    <br>
+    <p>by {{ entry[2] }} on {{ entry[3] }}</p>
+</div>
+<hr> {% endfor %} {% endautoescape %} {% else %}
+
+{% endif %} {% endblock %}

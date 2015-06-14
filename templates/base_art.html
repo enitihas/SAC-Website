@@ -1,0 +1,41 @@
+{% extends "base.html" %} {% block content %}
+<header class="intro-header" style="background-image: url('/static/img/art.jpg')">
+    <div class="container">
+        <div class="row">
+            <h1>&nbsp;</h1></div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>Art Geeks</h1>
+                    <hr class="small">
+                    <span class="subheading"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h1>&nbsp;</h1></div>
+        <div class="row">
+            <h1>&nbsp;</h1></div>
+    </div>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            {% block main_content %} {% endblock %}
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+            
+            <h4><a href="#">Our Clubs</a></h4>
+            <div class="nav nav-pills nav-stacked">
+                <li class="presentation"><a href="/mus">Music Club</a></li>
+                <li class="presentation"><a href="/dan">Dance Club</a></li>
+                <li class="presentation"><a href="/dra">Drama Club</a></li>
+                <li class="presentation"><a href="/pho">Photography Club</a></li>
+                <li class="presentation"><a href="/pm">Programme Management Club</a></li>
+                <li class="presentation"><a href="/art">Art Geeks</a></li>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

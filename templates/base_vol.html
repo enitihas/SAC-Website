@@ -1,0 +1,50 @@
+{% extends "base.html" %} {% block content %}
+<header class="intro-header" style="background-image: url('/static/img/vol.jpg')">
+    <div class="container">
+        <div class="row">
+            <h1>&nbsp;</h1></div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>Volleyball</h1>
+                    <hr class="small">
+                    <span class="subheading">Smash Hard</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h1>&nbsp;</h1></div>
+        <div class="row">
+            <h1>&nbsp;</h1></div>
+    </div>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            {% block main_content %} {% endblock %}
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+            <!-- <h4><a href="#">Our Clubs</a></h4>
+            <div class="nav nav-pills nav-stacked">
+                <li class="presentation"><a href="#">EDLS</a></li>
+                <li class="presentation"><a href="#">Magazine Section</a></li>
+            </div>
+            <hr> -->
+            <h4><a href="#">Sports</a></h4>
+            <div class="nav nav-pills nav-stacked">
+                <li class="presentation"><a href="/cri">Cricket</a></li>
+                <li class="presentation"><a href="/foo">Football</a></li>
+                <li class="presentation"><a href="/bas">Basketball</a></li>
+                <li class="presentation"><a href="/bad">Badminton</a></li>
+                <li class="presentation"><a href="/tt">Table Tennis</a></li>
+                <li class="presentation"><a href="/vol">Volleyball</a></li>
+                <li class="presentation"><a href="/hoc">Hockey</a></li>
+                <li class="presentation"><a href="/ath">Athletics</a></li>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
